@@ -131,11 +131,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="assemble.cpp" />
-    <ClCompile Include="cal.cpp" />
-    <ClCompile Include="cal_test.cpp">
+    <ClCompile Include="assemble_test.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="component.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="assemble.hpp" />
+    <ClInclude Include="component.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
